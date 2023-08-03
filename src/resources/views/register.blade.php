@@ -79,5 +79,10 @@
     </form>
    </div>
   </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">Atte,inc.</p>
+    </div>
+  </footer>
 </body>
 </html>

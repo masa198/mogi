@@ -1,0 +1,79 @@
+.header {
+    background: #fff;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.member-form_content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.member-form_heading {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    margin-bottom: 15px;
+}
+
+.form__input--text {
+    padding: 10px;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.form__error {
+    height: 20px;
+    color: red;
+    text-align: left;
+}
+
+.form__button {
+    margin-top: 30px;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-content {
+    margin: 0 auto;
+    padding: 0 3cm;
+    max-width: 1230px;
+}
+
+.footer-text {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}

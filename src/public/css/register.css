@@ -64,3 +64,20 @@
     color: white;
     cursor: pointer;
 }
+
+.footer {
+    background-color: #fff;
+}
+
+.footer-content {
+    margin:0 auto;
+    padding: 0 3cm;
+    max-width: 1230px;
+}
+
+.footer-text {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
