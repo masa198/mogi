@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use app\Http\Controllers\RegisterController;
+use App\Http\Controllers\RegisterController;
 
 
 /*
@@ -15,4 +15,7 @@ use app\Http\Controllers\RegisterController;
 |
 */
 
-Route::get('/register', [RegisterController::class, create]);
+Route::get('/register', [RegisterController::class, 'index']);
+Route::get('/login', [RegisterController::class, 'store']);
+Route::get('/stamp', [RegisterController::class, 'display']);
+Route::get('/data', [RegisterController::class, 'work']);

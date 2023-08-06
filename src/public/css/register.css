@@ -1,3 +1,6 @@
+.title {
+    font-family: 'REM', sans-serif;
+}
 .header {
     background: #fff;
 }
@@ -11,7 +14,7 @@
 .header__logo {
     color:black;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
     text-decoration: none;
 }
 
@@ -19,6 +22,7 @@
     margin:0 auto;
     padding: 30px 15px;
     max-width: 1230px;
+    background-color: rgb(219, 216, 216);
 }
 
 .member-form_heading {
@@ -30,18 +34,23 @@
 
 .form {
     margin: 0 auto;
-    width:70%;
+    width:100%;
     text-align: center;
 }
 
 .form__group {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-.form__input--text {
-    padding: 10px;
-    width: 50%;
-    border: 1px solid black;
+.from__input--text {
+    height: 20px;
+    border-radius: 3px;
+    background-color: rgb(219, 216, 216);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .form__error {
@@ -54,15 +63,28 @@
     margin-top: 30px;
 }
 
-.form__button-submit {
-    padding: 10px;
-    width: 30%;
-    height: 50px;
+.from__button-submit {
+    /* padding: 10px; */
+    width: 13%;
+    height: 20px;
     border: none;
     border-radius: 3px;
     background: blue;
     color: white;
     cursor: pointer;
+}
+
+.account-link {
+    margin-top: 5px;
+    padding-bottom: 0%;
+    margin-bottom: 0px;
+    font-size: small;
+}
+
+.login-link {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: none;
 }
 
 .footer {
@@ -71,7 +93,7 @@
 
 .footer-content {
     margin:0 auto;
-    padding: 0 3cm;
+    padding: 0 1cm;
     max-width: 1230px;
 }
 

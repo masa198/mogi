@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/register.css') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=REM:wght@100&display=swap" rel="stylesheet">
     <title>Atte</title>
 </head>
 <body>
   <header class="header">
-    <div class="header_inner">
-      <a class="header_logo" href="/register">
+    <div class="header__inner">
+      <a class="header__logo" href="/register">
         Atte
       </a>
     </div>
@@ -21,7 +24,7 @@
     <div class="member-form_heading">
      <h2>会員登録</h2>
     </div>
-    <form class="form">
+    <form class="form" action="/login" method="post">
      <div class="form__group">
       <div class="from__input--text">
        <input type="text" name="name" placeholder="名前">
@@ -30,7 +33,6 @@
               <!--バリデーション機能を実装したら記述します。-->
       </div>
      </div>
-
       <div class="form__group">
        <div class="from__input--text">
         <input type="email" name="email" placeholder="メールアドレス">
@@ -39,7 +41,6 @@
               <!--バリデーション機能を実装したら記述します。-->
        </div>
       </div>
-
       <div class="form__group">
        <div class="from__input--text">
         <input type="password" name="password" placeholder="パスワード">
@@ -48,7 +49,6 @@
               <!--バリデーション機能を実装したら記述します。-->
        </div>
       </div>
-
       <div class="form__group">
        <div class="from__input--text">
         <input type="password" name="password" placeholder="パスワード">
@@ -57,7 +57,6 @@
               <!--バリデーション機能を実装したら記述します。-->
        </div>
       </div>
-
       <div class="form__group">
        <div class="from__input--text">
         <input type="password" name="confirm_password" placeholder="パスワード">
@@ -66,12 +65,10 @@
               <!--バリデーション機能を実装したら記述します。-->
        </div>
       </div>
-
       <div class="from__button">
        <button class="from__button-submit" type="submit">会員登録</button>
       </div>
       <div class="account-link">
-       <div class="account-link__heading">
         <p>アカウントをお持ちの方はこちらから</p>
        </div>
        <a href="/login" class="login-link">ログイン</a>
