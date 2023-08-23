@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/login.css') }}" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=REM:wght@100&display=swap" rel="stylesheet">
     <title>Atte</title>
 </head>
@@ -24,7 +24,9 @@
     <div class="member-form_heading">
      <h2>ログイン</h2>
     </div>
-    <form class="form">
+    <form class="form" action="{{ route('login') }}" method="post">  
+      <!-- ログインフォームの送信後にログイン処理が行われ、その後に /stamp ページにリダイレクトされるようになります。 -->
+      @csrf
       <div class="form__group">
        <div class="from__input--text">
         <input type="email" name="email" placeholder="メールアドレス">

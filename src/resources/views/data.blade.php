@@ -29,14 +29,15 @@
   <main>
    <div class="data_content">
     <div class="data_heading">
-       <span id="previous-date">&lt;</span>
-       <span id="current-date">2021-11-01</span>
-       <span id="next-date">&gt;</span>
+       <span class="before"><</span>
+       <span>2021-11-01</span>
+       <span class="after">></span>
     </div>
     <div class="work">
       <div class="work__container">
         <div class="table-container">
           <table>
+            @csrf
             <tr>
                 <th class="th">名前</th>
                 <th class="th">勤務開始</th>
@@ -79,8 +80,77 @@
                 <td class="td">09:29:40</td>
             </tr>
           </table>
-        </div>
-        <div class="pagination">
+          <div class="pagination">
+            <div class="pagination-box">
+                <div class="pagination-mark"><</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">1</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">2</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">3</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">4</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">5</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">6</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">7</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">8</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">9</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">10</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">11</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">12</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">13</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">14</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">15</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">16</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">17</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">18</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">19</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">20</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-number">21</div>
+            </div>
+            <div class="pagination-box">
+                <div class="pagination-mark">></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -91,22 +161,5 @@
       <p class="footer-text">Atte,inc.</p>
     </div>
   </footer>
-  <script>
-      function changeDate(offset) {
-          var currentDate = new Date(document.getElementById("current-date").textContent);
-          currentDate.setDate(currentDate.getDate() + offset);
-
-          var formattedDate = currentDate.toISOString().split("T")[0];
-          document.getElementById("current-date").textContent = formattedDate;
-      }
-
-      document.getElementById("previous-date").addEventListener("click", function() {
-          changeDate(-1);
-      });
-
-      document.getElementById("next-date").addEventListener("click", function() {
-          changeDate(1);
-      });
-  </script>
 </body>
 </html>
